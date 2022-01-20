@@ -14,7 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    $data = [
+        'articles' => [
+            'lorem ipsum',
+            ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, perspiciatis!',
+            'quibusdam perspiciatis laboriosam sunt blanditiis necessitatibus adipisci aspernatur ipsum.',
+            ' Sint deleniti molestiae repellendus quam est excepturi voluptatibus reprehenderit corporis aut veniam atque nemo nesciunt, facilis quae expedita' 
+        ]
+        
+    ];
+
+
+    return view('home', $data);
 })->name('home');
 
 Route::get('/about', function () {

@@ -13,6 +13,7 @@
       <div class="row">
         <h1>OPPORTUNITY</h1>
 
+
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>

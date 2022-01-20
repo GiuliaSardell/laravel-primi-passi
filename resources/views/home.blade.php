@@ -11,7 +11,7 @@
   <header>
     <div class="container">
       <div class="row">
-        
+
         <h1>HOME</h1>
 
         <ul class="nav">   
@@ -22,12 +22,31 @@
             <a class="nav-link" href="{{route('contacts')}}">Contacts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{route('opportunity')}}">opportunity</a>
+            <a class="nav-link" href="{{route('opportunity')}}">Opportunity</a>
           </li>
         </ul>
 
       </div>
     </div>
+
+    <main>
+      <div class="container">
+        <div class="row">
+        
+          <p>
+            These are our articles:
+            <ul>
+              @foreach ($articles as $article)
+                <li>
+                  {{$article}}
+                </li>
+              @endforeach  
+            </ul>
+          </p>
+              
+        </div>
+      </div>
+    </main>
 
   </header>
 </body>
